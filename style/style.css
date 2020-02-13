@@ -15,6 +15,7 @@ header {
     width: 100%;
     padding: 2px;
     margin-bottom: 10px;
+    border-bottom: 2px solid black;
 }
 header h1 {
     font-size: 45px;
@@ -75,12 +76,16 @@ aside {
     border-radius: 15px;
     padding: 20px;
 }
-stuff
+
 footer {
     
-    background-color: blue;
+    background-image:url(http://www.unitysnippets.theoriginalyeti.co.uk/images/resources/textures/textureBank/wood/wood004_DIFF.jpg) ;
     clear: both;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top: 2px solid black;
+    height: 80px;
 }
 aside article {
     background-color: green;
@@ -90,4 +95,27 @@ aside article {
     font-size: 10px;
     padding-top: 30px;
     margin-bottom: 5px;
+    border: 2px solid black;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+footer p {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: black;
+    color: whitesmoke;
+    padding: 4px;
+    margin-left: 25px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+li:hover {
+    background-color: blue;
+    padding: 12px;
+    font-size: 18px;
+} 
+aside article section {
+    margin: 0 auto;
 }
