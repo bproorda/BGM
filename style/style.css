@@ -14,6 +14,7 @@ header {
     background-image:url(http://www.unitysnippets.theoriginalyeti.co.uk/images/resources/textures/textureBank/wood/wood004_DIFF.jpg) ;
     width: 100%;
     padding: 2px;
+    margin-bottom: 10px;
 }
 header h1 {
     font-size: 45px;
@@ -36,7 +37,7 @@ header img {
 ul {
     /* background-color: brown; */
     margin-top: 45px;
-    margin-right: 5px;
+    margin-right: 50px;
     display: inline-block;
     float: right;
 }
@@ -44,7 +45,13 @@ ul {
 li {
     list-style: none;
     display: inline-block;
-    margin: 2px;
+    margin: 20px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 15px;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
 }
 
 aside {
@@ -55,18 +62,32 @@ aside {
 .stuff {
     float: left;
     width: 75%;
-    background: gray;
+    /* background: gray; */
     height: 350px;
     border: black;
     margin: 0 auto;
     clear: left;
-    
+}
+.stuff article {
+    background-color: gray;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    padding: 20px;
 }
 stuff
 footer {
+    
     background-color: blue;
     clear: both;
     width: 100%;
 }
-
-
+aside article {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    font-size: 10px;
+    padding-top: 30px;
+    margin-bottom: 5px;
+}

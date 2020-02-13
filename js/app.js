@@ -1,23 +1,32 @@
 console.log('This is connected and working');
-var hourNow = prompt('What time is it? 0-23')
-var greeting
+var name = prompt('What is your name?')
+var greeting = "Hello, "+ name + ".";
 
+var gametype = prompt("Do you prefer 1. Role play board games or 2. Chess. Please enter 1 or 2")
+var response
 
-if (hourNow > 18 && hourNow < 24) {
-    greeting = 'Shouldn\'t you be in bed?'
-} else if (hourNow > 12 && hourNow < 18) {
-    greeting = 'Why aren\'t you at work?'
-} else if (hourNow >= 0 && hourNow < 12) {
-    greeting = 'Did you have good breakfast?'
-} else {
-    greeting = 'wait, you did not give me the time in the right format'
-}
+var a = document.createElement('a');
+var linkText = document.createTextNode("Francesco's Site");
+a.appendChild(linkText);
+a.title = "Francesco's Site";
+a.href = "https://francescodt.github.io/bgmu/";
+document.body.appendChild(a);
+
+ if (gametype == 1) {
+     response = 'You should check out Francesco\'s Site! There is a link above';
+ } else if (gametype == 2) {
+     response = 'Welcome to BMG\'s Chess Page!';
+ } else {
+     response = 'oops, did you enter a wrong number?';
+ }
 console.log(greeting);
+console.log(response);
 // alert(greeting);
-document.write(greeting)
+document.write(greeting.bold());
+document.write(response);
 //trying to make an alert when you click a link
 function checkbox() {
-var confirmmessage = "Are you sure you want to continue?";
+var confirmmessage = "Thank you for visiting! Enjoy Francesoco's site!";
 var go = "https://francescodt.github.io/bgmu/";
 var message = "Action Was Cancelled By User";
 
@@ -31,3 +40,4 @@ if (confirm(confirmmessage)) {
 }
 
 }
+ 
