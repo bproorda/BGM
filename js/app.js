@@ -13,11 +13,11 @@ a.href = "https://francescodt.github.io/bgmu/";
 document.body.appendChild(a);
 
  if (gametype == 1) {
-     response = 'You should check out Francesco\'s Site! There is a link above';
+     response = ' You should check out Francesco\'s Site! There is a link above';
  } else if (gametype == 2) {
-     response = 'Welcome to BMG\'s Chess Page!';
+     response = ' Welcome to BMG\'s Chess Page!';
  } else {
-     response = 'oops, did you enter a wrong number?';
+     response = ' oops, did you enter a wrong number?';
  }
 console.log(greeting);
 console.log(response);
