@@ -67,5 +67,49 @@ if (confirm(confirmmessage)) {
 
 }
 
+    
+    
+function pieces() {
+    var order = prompt('do you want pawns or queens').toLowerCase();
+    var item;
+    while (order !== 'pawns' && order !== 'queens') {
+        order = prompt('please enter pawns or queens');
+      }
+    
+      var howMany = prompt("how many do you want?");
+      while (howMany === '' || isNaN(howMany)) {
+        howMany = prompt('please enter a number');
+      }
+    console.log(howMany);
+    
+    console.log('getItem();');
+    console.log(order);
 
+    for (i = 0; i < howMany; i++ ) {
+    var para = document.createElement("p");
+    var img = document.createElement('img');
+    console.log(para);
+    if (order === 'pawns'){
+      img.src = 'https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413420_960_720.png';
+    } else if (order === 'queens') {
+      img.src = 'https://cdn.pixabay.com/photo/2018/05/19/12/50/chess-3413424_960_720.png';
+    }
+    
+    
+
+    
+    
+    img.width= "80";
+    console.log(img); 
+    
+     para.appendChild(img);
+    
+     
+
+    var element = document.getElementById("items");
+    console.log(element);
+    element.appendChild(para);  
+    } 
+
+  }
  
